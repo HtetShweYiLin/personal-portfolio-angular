@@ -4,7 +4,7 @@ import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {
-    path: '', redirectTo: '', pathMatch: 'full'
+    path: '', redirectTo: '/profile', pathMatch: 'full'
   },
   {
     path: 'profile',
