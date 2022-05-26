@@ -1,0 +1,59 @@
+.p-b-15 {
+    padding-bottom: 15px;
+  }
+
+  .p-b-8,.list li {
+    padding-bottom: 8px;
+  }
+
+  .list li:last-child {
+    padding-bottom: 0px;
+  }
+
+  .resume-container {
+    max-width: 1024px;
+    /*margin: 0 auto;*/
+  }
+
+  .content-wrapper {
+    display: flex;
+  }
+
+  .column-left {
+    width: 70%;
+  }
+
+  .column-right {
+    width: 30%;
+  }
+
+  .column-left,.column-right {
+    padding: 20px;
+  }
+
+  .header {
+    padding-bottom: 12px;
+  }
+
+  .personal-info,.skills-wrapper div {
+    padding: 5px 0px;
+  }
+
+  .personal-info span {
+    padding-left: 10px;
+  }
+
+  .personal-info i {
+    width: 20px;
+    text-align: center;
+  }
+
+  @media (max-width: 991.98px) {
+    .content-wrapper {
+      display: block;
+    }
+
+    .column-left,.column-right {
+      width: 100%;
+    }
+  }
