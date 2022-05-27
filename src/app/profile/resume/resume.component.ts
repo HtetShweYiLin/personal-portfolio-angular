@@ -14,22 +14,22 @@ export class ResumeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // exportHtmlToPDF(){
-  //   let data: any = document.getElementById('resume');
-  //   console.log("data",data);
+  exportHtmlToPDF(){
+    let data: any = document.getElementById('resume');
+    console.log("data",data);
       
-  //     html2canvas(data).then(canvas => {
+      html2canvas(data).then(canvas => {
           
-  //         let docWidth = 208;
-  //         let docHeight = canvas.height * docWidth / canvas.width;
+          let docWidth = 208;
+          let docHeight = canvas.height * docWidth / canvas.width;
           
-  //         const contentDataURL = canvas.toDataURL('image/png')
-  //         let doc = new jsPDF('p', 'mm', 'a4');
-  //         let position = 0;
-  //         doc.addImage(contentDataURL, 'PNG', 0, position, docWidth, docHeight)
+          const contentDataURL = canvas.toDataURL('image/png')
+          let doc = new jsPDF('p', 'mm', 'a4');
+          let position = 0;
+          doc.addImage(contentDataURL, 'PNG', 0, position, docWidth, docHeight)
           
-  //         doc.save('exportedPdf.pdf');
-  //     });
-  // }
+          doc.save('exportedPdf.pdf');
+      });
+  }
 
 }
