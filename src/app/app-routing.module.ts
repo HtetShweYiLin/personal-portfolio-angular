@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProfileComponent } from './profile/profile.component';
-import { ResumeComponent } from './profile/resume/resume.component';
+import { ResumeComponent } from './profile/components/resume/resume.component';
 
 const routes: Routes = [
   {
