@@ -5,10 +5,10 @@ import { ResumeComponent } from './profile/components/resume/resume.component';
 
 const routes: Routes = [
   {
-    path: '', redirectTo: '/profile', pathMatch: 'full'
+    path: '', redirectTo: '/', pathMatch: 'full'
   },
   {
-    path: 'profile',
+    path: '',
     component: ProfileComponent
   },
   {
