@@ -1,1 +1,22 @@
-<p>about works!</p>
+<div id="about">
+    <div>
+        About Me
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+            <p *ngFor="let detail of about.details">
+                {{ detail }}
+            </p>
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <div class="row" *ngFor="let info of about.personalInfo">
+                <div class="col-md-4">
+                    {{ info.label }}:
+                </div>
+                <div class="col-md-8">
+                    {{ info.value }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

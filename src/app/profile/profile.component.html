@@ -1,9 +1,9 @@
 <app-header-bar></app-header-bar>
-<div class ="page-content">
-    <app-intro></app-intro>
-    <app-about></app-about>
-    <app-experience></app-experience>
-    <app-skills></app-skills>
-    <app-education></app-education>
+<div class="page-content">
+    <app-intro [intro]="profile.intro"></app-intro>
+    <app-about [about]="profile.about"></app-about>
+    <app-experience [experience]="profile.experience"></app-experience>
+    <app-skills [skills]="profile.skills"></app-skills>
+    <app-education [education]="profile.education"></app-education>
     <app-contact></app-contact>
 </div>

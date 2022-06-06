@@ -3,16 +3,20 @@ import { Router } from '@angular/router';
 import { jsPDF } from "jspdf";
 import html2canvas from 'html2canvas';
 
+import { profile } from "../data/profile";
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
+  public profile = profile;
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    console.log("profile",this.profile);
   }
 
   // exportHtmlToPDF(){

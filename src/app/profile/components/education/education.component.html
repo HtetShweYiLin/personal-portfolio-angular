@@ -1,1 +1,19 @@
-<p>education works!</p>
+<div id="education">
+    <div>
+        Education
+    </div>
+    <div *ngFor="let data of education">
+        <div>
+            {{ data.duration }}
+        </div>
+        <div>
+            {{ data.type }}
+        </div>
+        <div>
+            {{ data.name }}
+        </div>
+        <div>
+            {{ data.place }}
+        </div>
+    </div>
+</div>

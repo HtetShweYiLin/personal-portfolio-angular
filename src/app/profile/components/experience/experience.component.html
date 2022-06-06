@@ -1,1 +1,32 @@
-<p>experience works!</p>
+<div id="experience">
+    <div>
+        Experience
+    </div>
+    <div *ngFor="let data of experience">
+        <div>
+            {{ data.company }}
+        </div>
+        <div>
+            {{ data.job_position }}
+        </div>
+        <div>
+            {{ data.description }}
+        </div>
+        <div>
+            <div>
+                Core Functionality
+            </div>
+            <div *ngFor="let functionality of data.functionalities">
+                {{ functionality }}
+            </div>
+        </div>
+        <div>
+            <div>
+                Technologies and Languages
+            </div>
+            <div *ngFor="let technology of data.technologies">
+                {{ technology }}
+            </div>
+        </div>
+    </div>
+</div>
