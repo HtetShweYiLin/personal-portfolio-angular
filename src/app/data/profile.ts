@@ -1,7 +1,7 @@
 export const profile = {
     "intro": {
         "name": "Htet Shwe Yi Lin",
-        "position": "Front-end developer"
+        "position": "Front End Developer"
     },
     "about": {
         "details": [
@@ -20,7 +20,7 @@ export const profile = {
             },
             {
                 "label": "Address",
-                "value": "Tharketa, Yangon, Myanmar"
+                "value": "No(168),Myin Taw Thar Road,6th West Ward,Tharketa,Yangon"
             }
         ]
     },
