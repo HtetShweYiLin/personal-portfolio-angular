@@ -1,8 +1,15 @@
 <div id="skill" class="profile-card mt-3 mb-3">
-    <div>
+    <div class="h4-strong">
         Skills
     </div>
-    <div *ngFor="let skill of skills">
-        {{ skill.name }}
+    <div class="row">
+        <div *ngFor="let skill of skills" class="col-lg-6 col-md-12">
+            <div class="light-body-m">
+                {{ skill.name }}
+            </div>
+            <div class="animated-progress">
+                <span [style.width]="skill.percentage + '%'" class="bg-lg700"></span>
+            </div>
+        </div>
     </div>
 </div>

@@ -1,31 +1,39 @@
 <div id="experience" class="profile-card mt-3 mb-3">
-    <div>
+    <div class="h4-strong">
         Experience
     </div>
-    <div *ngFor="let data of experience">
-        <div>
-            {{ data.company }}
+    <div *ngFor="let data of experience" class="row light-body-m">
+        <div class="col-lg-6 col-md-12">
+            <div class="body-m pb-2">
+                {{ data.company }}
+            </div>
+            <div class="body-m pb-2">
+                {{ data.job_position }}
+            </div>
+            <div class="pb-3">
+                {{ data.description }}
+            </div>
         </div>
-        <div>
-            {{ data.job_position }}
-        </div>
-        <div>
-            {{ data.description }}
-        </div>
-        <div>
+        <div class="col-lg-6 col-md-12">
+            <div class="pb-3">
+                <div class="body-m pb-2">
+                    Core Functionality
+                </div>
+                <ul>
+                    <li *ngFor="let functionality of data.functionalities">
+                        {{ functionality }}
+                    </li>
+                </ul>
+            </div>
             <div>
-                Core Functionality
-            </div>
-            <div *ngFor="let functionality of data.functionalities">
-                {{ functionality }}
-            </div>
-        </div>
-        <div>
-            <div>
-                Technologies and Languages
-            </div>
-            <div *ngFor="let technology of data.technologies">
-                {{ technology }}
+                <div class="body-m pb-2">
+                    Technologies and Languages
+                </div>
+                <ul>
+                    <li *ngFor="let technology of data.technologies">
+                        {{ technology }}
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

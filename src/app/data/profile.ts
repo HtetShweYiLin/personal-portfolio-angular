@@ -28,19 +28,27 @@ export const profile = {
     "skills": [
         {
             "name": "HTML",
-            "percentage": "85"
+            "percentage": 85
         },
         {
             "name": "CSS",
-            "percentage": "80"
+            "percentage": 80
         },
         {
             "name": "Javascript",
-            "percentage": "78"
+            "percentage": 78
         },
         {
-            "name": "Angular",
-            "percentage": "83"
+            "name": "Angular 2+",
+            "percentage": 83
+        },
+        {
+            "name": "Angular JS",
+            "percentage": 65
+        },
+        {
+            "name": "React",
+            "percentage": 55
         }
     ],
     "experience": [
