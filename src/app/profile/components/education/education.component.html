@@ -1,18 +1,15 @@
-<div id="education" class="mt-3 mb-3">
-    <div>
+<div id="education" class="profile-card mt-3 mb-3">
+    <div class="h4-strong pb-2">
         Education
     </div>
-    <div *ngFor="let data of education">
-        <div>
+    <div *ngFor="let data of education" class="item-card bg-s20 mb-3">
+        <div class="small">
             {{ data.duration }}
         </div>
-        <div>
-            {{ data.type }}
-        </div>
-        <div>
+        <div class="body-m">
             {{ data.name }}
         </div>
-        <div>
+        <div class="light-body-m">
             {{ data.place }}
         </div>
     </div>
