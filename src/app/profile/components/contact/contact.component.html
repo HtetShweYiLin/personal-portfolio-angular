@@ -1,41 +1,48 @@
 <div id="contact" class="pt-3 pb-3 mt-3 mb-3">
-    <div class="h4-strong pb-3">
+    <div class="h4-strong">
         Contact
     </div>
     <div class="row">
       <div class="col-lg-8 col-md-12">
         <form #contactForm="ngForm">
-          <div [hidden]="contactForm.submitted">
+          <div class="form-wrapper">
             <div class="cross-validation" [class.cross-validation-error]="contactForm.errors?.['identityRevealed'] && (contactForm.touched || contactForm.dirty)">
-              <div class="form-group pb-3">
-                <input type="text" id="name" name="name" class="form-control" placeholder="Name"
+              <div class="form-group mt-3 mb-3">
+                <input type="text" id="name" name="name" class="form-control contact-input bg-s0" placeholder="Name"
                       [(ngModel)]="contactUser.name" #name="ngModel" required>
 
-                <div *ngIf="name.invalid && (name.dirty || name.touched)"
-                    class="alert">
+                <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-r100 pt-3">
                   <div *ngIf="name.errors?.['required']">
                     Name is required.
                   </div>
                 </div>
               </div>
-              <div class="form-group pb-3">
-                <input type="email" id="email" name="email" class="form-control" placeholder="E-mail"
-                      [(ngModel)]="contactUser.email" #email="ngModel" required>
+              <div class="form-group mt-3 mb-3">
+                <input type="email" id="email" name="email" class="form-control contact-input bg-s0 bg-s10" placeholder="E-mail"
+                      [(ngModel)]="contactUser.email" #email="ngModel" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
 
-                <div *ngIf="email.invalid && (email.dirty || email.touched)"
-                    class="alert">
+                <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-r100 pt-3">
                   <div *ngIf="email.errors?.['required']">
-                    Name is required.
+                    E-mail is required.
+                  </div>
+                  <div *ngIf="email.errors?.['pattern']">
+                    E-mail is invalid.
                   </div>
                 </div>
               </div>
-              <div class="form-group pb-3">
-                <textarea type="message" id="message" name="message" class="form-control" placeholder="Message"
+              <div class="form-group mt-3 mb-3">
+                <textarea type="message" id="message" name="message" class="form-control contact-input bg-s0 bg-s10" placeholder="Message"
                 [(ngModel)]="contactUser.message" #message="ngModel"></textarea>
+
+                <div *ngIf="message.invalid && (message.dirty || message.touched)" class="text-r100 pt-3">
+                  <div *ngIf="message.errors?.['required']">
+                    Message is required.
+                  </div>
+                </div>
               </div>
             </div>
             <button type="submit" class="btn btn-primary"
-                    [disabled]="contactForm.invalid" (click)="onClickContact(contactUser)">Submit</button>
+                    [disabled]="contactForm.invalid" (click)="onClickContact(contactUser); contactForm.resetForm()">Submit</button>
           </div>
         </form>
       </div>

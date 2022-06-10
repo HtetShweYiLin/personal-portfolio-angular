@@ -67,6 +67,18 @@
 .bg-g500 {
   background-color: var(--color-g500);
 }
+.text-r50 {
+  color: var(--color-r50);
+}
+.bg-r50 {
+  background-color: var(--color-r50);
+}
+.text-r100 {
+  color: var(--color-r100);
+}
+.bg-r100 {
+  background-color: var(--color-r100);
+}
 .text-c25 {
   color: var(--color-c25);
 }

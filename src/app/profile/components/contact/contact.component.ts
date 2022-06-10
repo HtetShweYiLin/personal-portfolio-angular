@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { contact_user } from 'src/app/data/contact_user';
 
 @Component({
   selector: 'app-contact',
@@ -9,11 +10,8 @@ export class ContactComponent implements OnInit {
   @Input() contact:Array<any> = [];
   @Output() clickContact = new EventEmitter<any>();
 
-  public contactUser:any = {
-    "name": '',
-    "email": '',
-    "message": ''
-  };
+  public contactUser = contact_user;
+  
   constructor() { }
 
   ngOnInit(): void {
