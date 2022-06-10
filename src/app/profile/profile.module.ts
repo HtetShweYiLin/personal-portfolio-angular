@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { AboutComponent } from './components/about/about.component';
@@ -25,7 +26,9 @@ import { HeaderBarComponent } from './components/header-bar/header-bar.component
     HeaderBarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class ProfileModule { }

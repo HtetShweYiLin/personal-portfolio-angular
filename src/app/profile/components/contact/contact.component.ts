@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-
+  public contactUser:any = {
+    "name": '',
+    "email": '',
+    "message": ''
+  };
   constructor() { }
 
   ngOnInit(): void {

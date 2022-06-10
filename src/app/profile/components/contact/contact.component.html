@@ -3,11 +3,39 @@
         Contact
     </div>
     <div>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <form #heroForm="ngForm" appIdentityRevealed>
+        <div [hidden]="heroForm.submitted">
+          <div class="cross-validation" [class.cross-validation-error]="heroForm.errors?.['identityRevealed'] && (heroForm.touched || heroForm.dirty)">
+            <div class="form-group">
+              <input type="text" id="name" name="name" class="form-control"
+                    [(ngModel)]="contactUser.name" #name="ngModel" required>
+
+              <div *ngIf="name.invalid && (name.dirty || name.touched)"
+                  class="alert">
+                <div *ngIf="name.errors?.['required']">
+                  Name is required.
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" class="form-control"
+                    [(ngModel)]="contactUser.email" #email="ngModel" required>
+
+              <div *ngIf="email.invalid && (email.dirty || email.touched)"
+                  class="alert">
+                <div *ngIf="email.errors?.['required']">
+                  Name is required.
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea type="message" id="message" name="message" class="form-control"
+              [(ngModel)]="contactUser.message" #message="ngModel"></textarea>
+            </div>
+          </div>
+          <button type="submit"
+                  [disabled]="heroForm.invalid">Submit</button>
+        </div>
+      </form>
     </div>
 </div>
