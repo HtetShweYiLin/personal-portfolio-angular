@@ -21,7 +21,11 @@ export const profile = {
             {
                 "label": "Address",
                 "value": "No(168),Myin Taw Thar Road,6th West Ward,Tharketa,Yangon"
-            }
+            },
+            {
+              "label": "Phone",
+              "value": "+959420057072"
+          }
         ]
     },
     "language": "Myanmar, English",
@@ -87,5 +91,19 @@ export const profile = {
             "place": "India-Myanmar Centre for Enhancement of IT Skills (IMCEITS)",
             "duration": "November 2016 – January 2017"
         }
+    ],
+    "contact": [
+      {
+          "label": "Email",
+          "value": "htetshweyilin@gmail.com"
+      },
+      {
+          "label": "Address",
+          "value": "No(168),Myin Taw Thar Road,6th West Ward,Tharketa,Yangon"
+      },
+      {
+          "label": "Phone",
+          "value": "+959420057072"
+      }
     ]
 }

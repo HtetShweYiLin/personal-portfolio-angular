@@ -21,23 +21,27 @@ export class ProfileComponent implements OnInit {
 
   // exportHtmlToPDF(){
   //   let data: any = document.getElementById('resume');
-      
+
   //     html2canvas(data).then(canvas => {
-          
+
   //         let docWidth = 208;
   //         let docHeight = canvas.height * docWidth / canvas.width;
-          
+
   //         const contentDataURL = canvas.toDataURL('image/png')
   //         let doc = new jsPDF('p', 'mm', 'a4');
   //         let position = 0;
   //         doc.addImage(contentDataURL, 'PNG', 0, position, docWidth, docHeight)
-          
+
   //         doc.save('resume.pdf');
   //     });
   // }
-  
+
   downloadResume() {
     this.router.navigate(['resume']);
+  }
+
+  contactMe(contactUser: any) {
+    console.log("contactMe",contactUser);
   }
 
 }

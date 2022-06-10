@@ -7,5 +7,5 @@
     <app-experience [experience]="profile.experience"></app-experience>
     <app-skills [skills]="profile.skills"></app-skills>
     <app-education [education]="profile.education"></app-education>
-    <app-contact></app-contact>
+    <app-contact [contact]="profile.contact" (clickContact)="contactMe($event)"></app-contact>
 </div>
