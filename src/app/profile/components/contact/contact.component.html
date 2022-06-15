@@ -8,7 +8,7 @@
           <div class="form-wrapper">
             <div class="cross-validation" [class.cross-validation-error]="contactForm.errors?.['identityRevealed'] && (contactForm.touched || contactForm.dirty)">
               <div class="form-group mt-3 mb-3">
-                <input type="text" id="name" name="name" class="form-control contact-input bg-s0" placeholder="Name"
+                <input type="text" id="name" name="name" class="contact-input" placeholder="Name"
                       [(ngModel)]="contactUser.name" #name="ngModel" required>
 
                 <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-r100 pt-3">
@@ -18,7 +18,7 @@
                 </div>
               </div>
               <div class="form-group mt-3 mb-3">
-                <input type="email" id="email" name="email" class="form-control contact-input bg-s0 bg-s10" placeholder="E-mail"
+                <input type="email" id="email" name="email" class="contact-input" placeholder="E-mail"
                       [(ngModel)]="contactUser.email" #email="ngModel" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
 
                 <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-r100 pt-3">
@@ -31,7 +31,7 @@
                 </div>
               </div>
               <div class="form-group mt-3 mb-3">
-                <textarea type="message" id="message" name="message" class="form-control contact-input bg-s0 bg-s10" placeholder="Message"
+                <textarea type="message" id="message" name="message" class="contact-textarea" placeholder="Message"
                 [(ngModel)]="contactUser.message" #message="ngModel"></textarea>
 
                 <div *ngIf="message.invalid && (message.dirty || message.touched)" class="text-r100 pt-3">

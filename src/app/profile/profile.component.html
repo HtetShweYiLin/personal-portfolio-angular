@@ -1,12 +1,20 @@
 <app-header-bar></app-header-bar>
-<div class="text-c300 bg-s40">
+<div class="bg-g50">
     <app-intro [intro]="profile.intro"></app-intro>
-    <app-about [about]="profile.about"></app-about>
-    <app-experience [experience]="profile.experience"></app-experience>
-    <app-skills [skills]="profile.skills"></app-skills>
-    <app-education [education]="profile.education"></app-education>
 </div>
-<div class="text-g50 bg-b10">
+<div>
+  <app-about [about]="profile.about"></app-about>
+</div>
+<div class="bg-s40">
+  <app-experience [experience]="profile.experience"></app-experience>
+</div>
+<div>
+  <app-skills [skills]="profile.skills"></app-skills>
+</div>
+<div class="bg-s40">
+  <app-education [education]="profile.education"></app-education>
+</div>
+<div class="bg-b10 text-g50">
     <app-contact [contact]="profile.contact" (clickContact)="contactMe($event)"></app-contact>
 </div>
 <!-- <div class="page-content">

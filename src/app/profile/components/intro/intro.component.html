@@ -1,10 +1,20 @@
-<div id="intro" class="text-s0 bg-g50 slanted text-center">
-    <div class="container info-wrapper">
-        <div class="h1-strong pb-3">
-            {{ intro.name }}
-        </div>
-        <div class="h3-strong">
-            {{ intro.position }}
-        </div>
+<div id="intro" class="text-s40 container info-wrapper text-center p-4">
+  <div class="pt-2 pb-2">
+    <div class="profile-img">
+      <img src="assets/images/myAvatar.png">
     </div>
+  </div>
+  <div>
+    <div class="h1-strong pt-2 pb-2">
+        {{ intro.name }}
+    </div>
+    <div class="text-b10 h4-strong pt-2 pb-2">
+        {{ intro.position }}
+    </div>
+    <div>
+      <button class="bg-b10 text-g50 btn-download mt-2 mb-2">
+        Download Resume
+      </button>
+    </div>
+  </div>
 </div>

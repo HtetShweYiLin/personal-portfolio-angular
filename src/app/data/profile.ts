@@ -16,7 +16,7 @@ export const profile = {
             },
             {
                 "label": "Email",
-                "value": "htetshweyilin@gmail.com"
+                "value": "htetshweyilin.hsyl@gmail.com"
             },
             {
                 "label": "Address",
@@ -95,7 +95,7 @@ export const profile = {
     "contact": [
       {
           "label": "Email",
-          "value": "htetshweyilin@gmail.com"
+          "value": "htetshweyilin.hsyl@gmail.com"
       },
       {
           "label": "Address",

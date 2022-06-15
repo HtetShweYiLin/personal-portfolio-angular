@@ -4,11 +4,11 @@
     </div>
     <div class="row">
         <div *ngFor="let skill of skills" class="col-lg-6 col-md-12">
-            <div class="light-body-m">
+            <div class="body-m">
                 {{ skill.name }}
             </div>
-            <div class="animated-progress">
-                <span [style.width]="skill.percentage + '%'" class="bg-lg500"></span>
+            <div class="animated-progress bg-s40">
+                <span [style.width]="skill.percentage + '%'" class="bg-g50"></span>
             </div>
         </div>
     </div>

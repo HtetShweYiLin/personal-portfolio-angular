@@ -1,3 +1,21 @@
 .form-wrapper {
-    width: 90%;
+    width: 80%;
+}
+
+.contact-input,.contact-textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #f6f4f2;
+}
+
+.contact-textarea {
+  resize: none;
+}
+
+.contact-input:focus,.contact-textarea:focus {
+  outline: 2px solid #425664;
+  background-color: #f6f4f2;
 }
