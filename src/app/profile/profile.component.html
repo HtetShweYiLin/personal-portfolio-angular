@@ -1,12 +1,12 @@
 <app-header-bar></app-header-bar>
-<div class="bg-s40 text-c300">
+<div class="text-c300 bg-s40">
     <app-intro [intro]="profile.intro"></app-intro>
     <app-about [about]="profile.about"></app-about>
     <app-experience [experience]="profile.experience"></app-experience>
     <app-skills [skills]="profile.skills"></app-skills>
     <app-education [education]="profile.education"></app-education>
 </div>
-<div class="bg-b10">
+<div class="text-g50 bg-b10">
     <app-contact [contact]="profile.contact" (clickContact)="contactMe($event)"></app-contact>
 </div>
 <!-- <div class="page-content">

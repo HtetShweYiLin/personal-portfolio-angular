@@ -1,16 +1,18 @@
-<div id="education" class="container">
-    <div class="h4-strong pb-2">
-        Education
-    </div>
-    <div *ngFor="let data of education" class="item-card">
-        <div class="small">
-            {{ data.duration }}
+<div id="education" class="text-g50 container pb-4">
+    <div class="profile-card p-4">
+        <div class="h3-strong pb-3">
+            Education
         </div>
-        <div class="body-m">
-            {{ data.name }}
-        </div>
-        <div class="light-body-m">
-            {{ data.place }}
+        <div *ngFor="let data of education" class="item-card">
+            <div class="small">
+                {{ data.duration }}
+            </div>
+            <div class="body-m">
+                {{ data.name }}
+            </div>
+            <div class="light-body-m">
+                {{ data.place }}
+            </div>
         </div>
     </div>
 </div>
