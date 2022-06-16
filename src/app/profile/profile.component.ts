@@ -4,6 +4,7 @@ import { jsPDF } from "jspdf";
 import html2canvas from 'html2canvas';
 
 import { profile } from "../data/profile";
+import { navItems } from "../data/nav_items";
 
 @Component({
   selector: 'app-profile',
@@ -12,6 +13,7 @@ import { profile } from "../data/profile";
 })
 export class ProfileComponent implements OnInit {
   public profile = profile;
+  public navItems = navItems;
 
   constructor(private router: Router) { }
 
