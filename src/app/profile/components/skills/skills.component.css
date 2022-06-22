@@ -15,4 +15,5 @@
     position: absolute;
     text-align: end;
     padding-right: 5px;
+    z-index: 1;
   }

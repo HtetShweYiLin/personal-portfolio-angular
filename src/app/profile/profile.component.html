@@ -1,5 +1,5 @@
-<app-header-bar [items]="navItems"></app-header-bar>
-<div class="page-content">
+<app-header-bar [items]="navItems" [sticky]="sticky"></app-header-bar>
+<div [ngClass]="{'page-content': sticky}">
   <div class="bg-g50">
     <app-intro [intro]="profile.intro"></app-intro>
   </div>
