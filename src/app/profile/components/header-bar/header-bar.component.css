@@ -13,7 +13,9 @@ li {
 /* NAVBAR STYLING STARTS */
 .sticky {
   position: fixed!important;
-  top: 0;
+  left: 50%;
+  top: 0%;
+  transform: translateX(-50%);
   width: 100%;
 }
 
@@ -21,7 +23,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px;
+  padding: 0px;
   background-color: #ffffff;
   color: #425664;
   z-index: 2;
@@ -39,13 +41,11 @@ li {
 /* NAVBAR MENU */
 .menu {
   display: flex;
-  gap: 1em;
   font-size: 18px;
 }
 
 .menu li:hover {
-  background-color: #425664;
-  border-radius: 5px;
+  background-color: #f6f4f2;
   transition: 0.3s ease;
 }
 
@@ -54,12 +54,12 @@ li {
   transition: 0.3s ease;
 }
 
-.menu li:hover > a {
+/* .menu li:hover > a {
   color: #c6ad8f;
-}
+} */
 
 .menu li {
-  padding: 5px 14px;
+  padding: 12px;
 }
 
 /*RESPONSIVE NAVBAR MENU STARTS*/

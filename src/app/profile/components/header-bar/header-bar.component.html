@@ -1,16 +1,18 @@
 <nav id="top-navbar" class="navbar" [ngClass]="{'sticky': sticky}">
-  <!-- LOGO -->
-  <div class="text-g50 h2-strong">Htet Shwe Yi Lin</div>
-  <!-- NAVIGATION MENU -->
-  <ul class="nav-links">
-    <!-- USING CHECKBOX HACK -->
-    <input type="checkbox" id="checkbox_toggle" />
-    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-    <!-- NAVIGATION MENUS -->
-    <div class="menu">
-      <li *ngFor="let item of items">
-        <a [href]="'#' + item.link">{{ item.name }}</a>
-      </li>
-    </div>
-  </ul>
+  <div class="container">
+      <!-- LOGO -->
+    <div class="text-g50 h2-strong">Htet Shwe Yi Lin</div>
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <li *ngFor="let item of items">
+          <a [href]="'#' + item.link">{{ item.name }}</a>
+        </li>
+      </div>
+    </ul>
+  </div>
 </nav>
