@@ -22,9 +22,13 @@
 }
 
 .btn-download {
+  color: #425664;
   background-color: #c6ad8f;
   padding: 8px 12px;
   border-radius: 8px;
-  border: none;
-  outline: none;
+  text-decoration: none;
+}
+
+.btn-download:first-child {
+  margin-right: 12px;
 }

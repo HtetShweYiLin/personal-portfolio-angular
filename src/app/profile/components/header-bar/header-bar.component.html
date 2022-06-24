@@ -9,9 +9,7 @@
       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
       <!-- NAVIGATION MENUS -->
       <div class="menu">
-        <li *ngFor="let item of items">
-          <a [href]="'#' + item.link">{{ item.name }}</a>
-        </li>
+        <a *ngFor="let item of items" [href]="'#' + item.link" class="body-l">{{ item.name }}</a>
       </div>
     </ul>
   </div>
