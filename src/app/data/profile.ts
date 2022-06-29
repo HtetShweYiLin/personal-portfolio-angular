@@ -5,8 +5,8 @@ export const profile = {
     },
     "about": {
         "details": [
-            "Hello, I'm Htet Shwe Yi Lin.I am a skilled Front-end Developer.",
-            "Lover of innovation and everything related to generate new knowledge.Face problems with a smile and solve them as soon as possible. Very calculated about the time I spend and work I do.",
+            "Hello, I'm Htet Shwe Yi Lin.I am a Front-end Developer.",
+            "Lover of innovation and everything related to generate new knowledge.Face problems with a smile and solve them as soon as possible.",
             "To learn more about me, keep exploring my site or reach out directly."
         ],
         "personalInfo": [
@@ -20,12 +20,12 @@ export const profile = {
             },
             {
                 "label": "Address",
-                "value": "No(168),Myin Taw Thar Road,6th West Ward,Tharketa,Yangon"
+                "value": "Yangon, Myanmar"
             },
-            {
-              "label": "Phone",
-              "value": "+959420057072"
-          }
+            // {
+            //   "label": "Phone",
+            //   "value": "+959420057072"
+            // }
         ]
     },
     "language": "Myanmar, English",
@@ -59,10 +59,7 @@ export const profile = {
         {
             "job_position": "Frontend Developer",
             "company": "Amdon Consulting Pte Ltd",
-            "description": [
-                "The Amdon Group is a global EdTech player and provider of interactive content and inquiry-based pedagogical resources, especially in STEM Education and Corporate Learning.",
-                "Working as front-end developer for Web team"
-            ],
+            "description": "The Amdon Group is a global EdTech player and provider of interactive content and inquiry-based pedagogical resources, especially in STEM Education and Corporate Learning.Working as front-end developer for Web team.",
             "functionalities": [
                 "Web Development"
             ],
@@ -99,11 +96,11 @@ export const profile = {
       },
       {
           "label": "Address",
-          "value": "No(168),Myin Taw Thar Road,6th West Ward,Tharketa,Yangon"
+          "value": "Yangon, Myanmar"
       },
-      {
-          "label": "Phone",
-          "value": "+959420057072"
-      }
+      // {
+      //     "label": "Phone",
+      //     "value": "+959420057072"
+      // }
     ]
 }
