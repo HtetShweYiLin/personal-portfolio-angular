@@ -13,10 +13,9 @@
                 <div class="icon-wrapper body-m">
                   <i [class]="info.label" aria-hidden="true"></i>
                 </div>
-                <div *ngIf="info.type == 'text'">
+                <div>
                     {{ info.value }}
                 </div>
-                <a *ngIf="info.type != 'text'" [href]="info.type" target="_blank" class="link">{{ info.value }}</a>
             </div>
         </div>
     </div>

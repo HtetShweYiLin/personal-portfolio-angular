@@ -12,18 +12,11 @@ export const profile = {
         "personalInfo": [
             {
                 "label": "fa fa-map-marker",
-                "value": "Yangon, Myanmar",
-                "type": "text"
+                "value": "Yangon, Myanmar"
             },
             {
               "label": "fa fa-envelope",
-              "value": "htetshweyilin.hsyl@gmail.com",
-              "type": "text"
-            },
-            {
-              "label": "fa fa-linkedin-square",
-              "value": "linkedin.com/in/htet-shwe-yi-lin",
-              "type": "https://www.linkedin.com/in/htet-shwe-yi-lin-228715189/"
+              "value": "htetshweyilin.hsyl@gmail.com"
             }
         ]
     },
