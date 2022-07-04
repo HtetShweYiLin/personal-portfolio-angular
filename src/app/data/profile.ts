@@ -1,7 +1,7 @@
 export const profile = {
     "intro": {
         "name": "Htet Shwe Yi Lin",
-        "position": "Front End Developer"
+        "position": "front-end web developer"
     },
     "about": {
         "details": [
@@ -11,21 +11,20 @@ export const profile = {
         ],
         "personalInfo": [
             {
-                "label": "Date of Birth",
-                "value": "April 8, 1995"
+                "label": "fa fa-map-marker",
+                "value": "Yangon, Myanmar",
+                "type": "text"
             },
             {
-                "label": "Email",
-                "value": "htetshweyilin.hsyl@gmail.com"
+              "label": "fa fa-envelope",
+              "value": "htetshweyilin.hsyl@gmail.com",
+              "type": "text"
             },
             {
-                "label": "Address",
-                "value": "Yangon, Myanmar"
-            },
-            // {
-            //   "label": "Phone",
-            //   "value": "+959420057072"
-            // }
+              "label": "fa fa-linkedin-square",
+              "value": "linkedin.com/in/htet-shwe-yi-lin",
+              "type": "https://www.linkedin.com/in/htet-shwe-yi-lin-228715189/"
+            }
         ]
     },
     "language": "Myanmar, English",

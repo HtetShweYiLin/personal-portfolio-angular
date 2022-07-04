@@ -1,4 +1,4 @@
-<div id="about" class="container portfolio-block-spacing">
+<div id="about" class="text-c300 container portfolio-block-spacing">
     <div class="h3-strong pb-3">
         About Me
     </div>
@@ -9,13 +9,14 @@
             </p>
         </div>
         <div class="col-lg-6 col-md-12">
-            <div class="row pb-2" *ngFor="let info of about.personalInfo">
-                <div class="col-md-4 body-m">
-                    {{ info.label }}:
+            <div class="d-flex pb-2" *ngFor="let info of about.personalInfo">
+                <div class="icon-wrapper body-m">
+                  <i [class]="info.label" aria-hidden="true"></i>
                 </div>
-                <div class="col-md-8">
+                <div *ngIf="info.type == 'text'">
                     {{ info.value }}
                 </div>
+                <a *ngIf="info.type != 'text'" [href]="info.type" target="_blank" class="link">{{ info.value }}</a>
             </div>
         </div>
     </div>
