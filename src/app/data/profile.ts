@@ -5,7 +5,7 @@ export const profile = {
     },
     "about": {
         "details": [
-            "Hello, I'm Htet Shwe Yi Lin.I am a Front-end Developer.",
+            "Hello, I'm Htet Shwe Yi Lin.I am a Front-end Developer with over 5 years of experience in front-end web development.",
             "Lover of innovation and everything related to generate new knowledge.Face problems with a smile and solve them as soon as possible.",
             "To learn more about me, keep exploring my site or reach out directly."
         ],
@@ -51,7 +51,7 @@ export const profile = {
         {
             "job_position": "Frontend Developer",
             "company": "Amdon Consulting Pte Ltd",
-            "description": "The Amdon Group is a global EdTech player and provider of interactive content and inquiry-based pedagogical resources, especially in STEM Education and Corporate Learning.Working as front-end developer for Web team.",
+            "description": "The Amdon Group is a global EdTech player and provider of interactive content and inquiry-based pedagogical resources, especially in STEM Education and Corporate Learning.",
             "functionalities": [
                 "Web Development"
             ],
@@ -62,7 +62,6 @@ export const profile = {
                 "Angular JS",
                 "Angular 2+",
                 "Microsoft Azure",
-                "Shel-script",
                 "Git"
             ]
         }
