@@ -1,11 +1,11 @@
 <div id="contact" class="container portfolio-block-spacing">
-    <div class="h3-strong">
+    <div data-aos="fade-up" data-aos-duration="3000" class="h2-strong">
         Contact
     </div>
-    <div class="row">
+    <div data-aos="fade-up" data-aos-duration="3000" class="row">
       <div class="col-lg-8 col-md-12">
         <form #contactForm="ngForm">
-          <div class="form-wrapper">
+          <div class="form-wrapper body-xl-light">
             <div class="cross-validation" [class.cross-validation-error]="contactForm.errors?.['identityRevealed'] && (contactForm.touched || contactForm.dirty)">
               <div class="form-group mt-3 mb-3">
                 <input type="text" id="name" name="name" class="contact-input" placeholder="Name"
@@ -41,17 +41,17 @@
                 </div>
               </div>
             </div>
-            <button type="submit" class=" btn btn-submit"
+            <button type="submit" class="btn btn-submit"
                     [disabled]="contactForm.invalid" (click)="onClickContact(contactUser); contactForm.resetForm()">Submit</button>
           </div>
         </form>
       </div>
       <div class="col-lg-4 col-md-12 pt-2">
         <div *ngFor="let data of contact" class="pb-3">
-          <div class="body-m pb-1">
+          <div class="body-xl pb-1">
             {{ data.label }}
           </div>
-          <div class="light-body-m">
+          <div class="body-xl-light">
             {{ data.value }}
           </div>
         </div>

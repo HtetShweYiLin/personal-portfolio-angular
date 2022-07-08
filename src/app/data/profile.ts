@@ -5,7 +5,7 @@ export const profile = {
     },
     "about": {
         "details": [
-            "Hello, I'm Htet Shwe Yi Lin.I am a Front-end Developer with over 5 years of experience in front-end web development.",
+            "Hello, I'm Htet Shwe Yi Lin.I am a Front-end Developer with over 5 years of experience.",
             "Lover of innovation and everything related to generate new knowledge.Face problems with a smile and solve them as soon as possible.",
             "To learn more about me, keep exploring my site or reach out directly."
         ],

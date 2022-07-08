@@ -1,8 +1,8 @@
 <div id="experience" class="text-g50 container portfolio-block-spacing">
-    <div class="h2-strong pb-3">
+    <div data-aos="fade-up" data-aos-duration="3000" class="h2-strong pb-3">
         Experience
     </div>
-    <div *ngFor="let data of experience" class="row body-xl-light">
+    <div data-aos="fade-up" data-aos-duration="3000" *ngFor="let data of experience" class="row body-xl-light">
         <div class="col-lg-6 col-md-12">
             <div class="body-xl pb-3">
                 {{ data.company }}
@@ -30,7 +30,7 @@
                     Technologies and Languages
                 </div>
                 <ul>
-                    <li *ngFor="let technology of data.technologies">
+                    <li *ngFor="let technology of data.technologies" class="pb-2">
                         {{ technology }}
                     </li>
                 </ul>
