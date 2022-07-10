@@ -10,6 +10,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { HeaderBarComponent } from './components/header-bar/header-bar.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 
 
@@ -23,7 +24,8 @@ import { HeaderBarComponent } from './components/header-bar/header-bar.component
     ContactComponent,
     SkillsComponent,
     IntroComponent,
-    HeaderBarComponent
+    HeaderBarComponent,
+    ProjectsComponent
   ],
   imports: [
     CommonModule,

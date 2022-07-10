@@ -16,6 +16,10 @@ export const navItems = [
     "link": 'education'
   },
   // {
+  //   "name": 'Projects',
+  //   "link": 'project'
+  // },
+  // {
   //   "name": 'Contact',
   //   "link": 'contact'
   // }

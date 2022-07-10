@@ -80,6 +80,23 @@ export const profile = {
             "duration": "November 2016 – January 2017"
         }
     ],
+    "projects": [
+      {
+        "name": "Nodma",
+        "url": "https://nodma.pagewerkz.com/",
+        "logo": "assets/projects/nodma.png"
+      },
+      {
+        "name": "Classwerkz",
+        "url": "https://classwerkz.brainlitz.net/",
+        "logo": "assets/projects/classwerkz.png"
+      },
+      {
+        "name": "STEMWerkz Channel",
+        "url": "https://channel.stemwerkz.org/",
+        "logo": "assets/projects/stemwerkz_channel.png"
+      }
+    ],
     "contact": [
       {
           "label": "Email",

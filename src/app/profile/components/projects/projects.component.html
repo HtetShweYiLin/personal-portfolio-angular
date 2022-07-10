@@ -1,0 +1,20 @@
+<div id="project" class="text-c300 container portfolio-block-spacing">
+  <div class="h2-strong pb-3">
+    Projects
+  </div>
+  <div>
+    <div class="body-xl-light text-center">
+      Selected projects I've worked on in the past.
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-12" *ngFor="let project of projects">
+        <div class="project-logo-wrapper">
+          <img [src]="project.logo">
+        </div>
+        <div>
+          {{ project.name }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
