@@ -3,16 +3,22 @@
     Projects
   </div>
   <div>
-    <div class="body-xl-light text-center">
+    <div class="body-xl-light text-center pb-3">
       Selected projects I've worked on in the past.
     </div>
-    <div class="row">
+    <div class="row pt-3 pb-3">
       <div class="col-lg-4 col-md-12" *ngFor="let project of projects">
-        <div class="project-logo-wrapper">
-          <img [src]="project.logo">
-        </div>
-        <div>
-          {{ project.name }}
+        <div class="project-wrapper">
+          <div class="project-logo-wrapper">
+            <div class="project-logo">
+              <img [src]="project.logo">
+            </div>
+          </div>
+          <div class="text-c300 bg-s10 body-l project-name text-center p-4">
+            <div>
+              {{ project.name }}
+            </div>
+          </div>
         </div>
       </div>
     </div>

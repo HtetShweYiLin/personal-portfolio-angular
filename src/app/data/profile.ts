@@ -84,17 +84,26 @@ export const profile = {
       {
         "name": "Nodma",
         "url": "https://nodma.pagewerkz.com/",
-        "logo": "assets/projects/nodma.png"
+        "logo": "assets/projects/nodma.png",
+        "details": {
+          "description": "Digitally empowering the non-tech educator"
+        }
       },
       {
         "name": "Classwerkz",
         "url": "https://classwerkz.brainlitz.net/",
-        "logo": "assets/projects/classwerkz.png"
+        "logo": "assets/projects/classwerkz.png",
+        "details": {
+          "description": "The class management system for growing education center."
+        }
       },
       {
         "name": "STEMWerkz Channel",
         "url": "https://channel.stemwerkz.org/",
-        "logo": "assets/projects/stemwerkz_channel.png"
+        "logo": "assets/projects/stemwerkz_channel.png",
+        "details": {
+          "description": "One of the zones in STEMWerkz"
+        }
       }
     ],
     "contact": [

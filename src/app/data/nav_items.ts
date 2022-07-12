@@ -15,10 +15,10 @@ export const navItems = [
     "name": 'Education',
     "link": 'education'
   },
-  // {
-  //   "name": 'Projects',
-  //   "link": 'project'
-  // },
+  {
+    "name": 'Projects',
+    "link": 'project'
+  },
   // {
   //   "name": 'Contact',
   //   "link": 'contact'

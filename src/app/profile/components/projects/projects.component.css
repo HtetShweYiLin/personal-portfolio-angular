@@ -1,9 +1,25 @@
+.project-wrapper {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 12px;
+}
+
 .project-logo-wrapper {
-  width: 140px;
-  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.project-logo {
+  display: flex;
+  justify-content: center;
 }
 
 .project-logo-wrapper img {
-  width: 100%;
+  width: 50%;
   height: 100%;
+}
+
+.project-name {
+  border-radius: 0px 0px 12px 12px;
 }
