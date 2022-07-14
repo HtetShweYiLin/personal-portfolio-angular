@@ -16,7 +16,7 @@ export const profile = {
             },
             {
               "label": "fa fa-envelope",
-              "value": "htetshweyilin.hsyl@gmail.com"
+              "value": "me@htetshweyilin.com"
             }
         ]
     },
@@ -51,6 +51,7 @@ export const profile = {
         {
             "job_position": "Frontend Developer",
             "company": "Amdon Consulting Pte Ltd",
+            "duration": "Mar 2017 - Present",
             "description": "The Amdon Group is a global EdTech player and provider of interactive content and inquiry-based pedagogical resources, especially in STEM Education and Corporate Learning.",
             "functionalities": [
                 "Web Development"
@@ -109,7 +110,7 @@ export const profile = {
     "contact": [
       {
           "label": "Email",
-          "value": "htetshweyilin.hsyl@gmail.com"
+          "value": "me@htetshweyilin.com"
       },
       {
           "label": "Address",

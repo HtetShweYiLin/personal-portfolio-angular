@@ -1,14 +1,17 @@
 <div id="experience" class="text-g50 container portfolio-block-spacing">
-    <div data-aos="fade-up" data-aos-duration="3000" class="h2-strong pb-3">
+    <div data-aos="fade-up" data-aos-duration="2000" class="h2-strong pb-3">
         Experience
     </div>
-    <div data-aos="fade-up" data-aos-duration="3000" *ngFor="let data of experience" class="row body-xl-light">
+    <div data-aos="fade-up" data-aos-duration="2000" *ngFor="let data of experience" class="row body-xl-light">
         <div class="col-lg-6 col-md-12">
             <div class="body-xl pb-3">
                 {{ data.company }}
             </div>
             <div class="body-xl pb-3">
                 {{ data.job_position }}
+            </div>
+            <div class="body-m pb-3">
+              {{ data.duration }}
             </div>
             <div class="pb-3">
                 {{ data.description }}
