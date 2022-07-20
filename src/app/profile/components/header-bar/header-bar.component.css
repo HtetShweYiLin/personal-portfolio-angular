@@ -28,66 +28,44 @@ li {
   color: #425664;
   z-index: 2;
   box-shadow: 0px 1px 0px #e3e4e5;
+  height: 62px;
 }
 
-/* Static CSS Colour Change */
-.animated-text {
-  font-size: 36px;
-  font-weight: 800;
-  line-height: 40px;
+.diamond {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: inline-block;
 }
-.title-word {
-  animation: color-animation 4s linear infinite;
+.diamond:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 35px;
+  height: 35px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: rotate(45deg);
+  -webkit-transition: border-color 0.3s;
+  -moz-transform: rotate(45deg);
+  -moz-transition: border-color 0.3s;
+  transform: rotate(45deg);
+  border: 2px solid #425664;
 }
-
-.title-word-1 {
-  --color-1: #DF8453;
-  --color-2: #3D8DAE;
-  --color-3: #E4A9A8;
+.diamond-inner {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.title-word-2 {
-  --color-1: #DBAD4A;
-  --color-2: #ACCFCB;
-  --color-3: #17494D;
-}
-
-.title-word-3 {
-  --color-1: #ACCFCB;
-  --color-2: #E4A9A8;
-  --color-3: #ACCFCB;
-}
-
-.title-word-4 {
-  --color-1: #3D8DAE;
-  --color-2: #DF8453;
-  --color-3: #E4A9A8;
-}
-
-@keyframes color-animation {
-  0%    {color: var(--color-1)}
-  32%   {color: var(--color-1)}
-  33%   {color: var(--color-2)}
-  65%   {color: var(--color-2)}
-  66%   {color: var(--color-3)}
-  99%   {color: var(--color-3)}
-  100%  {color: var(--color-1)}
-}
-/* Static CSS Colour Change */
-
-/* .nav-links a {
-  color: #425664;
-}
-
-.nav-links a:hover {
-  color: #c6ad8f;
-  transition: 0.3s ease;
-} */
 
 /* NAVBAR MENU */
 .menu {
   display: flex;
-  font-size: 18px;
 }
 
 .menu a:hover {
@@ -96,6 +74,11 @@ li {
 }
 
 .menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 62px;
+  padding: 0px 14px;
   color: #425664;
   transition: 0.3s ease;
 }
@@ -103,10 +86,6 @@ li {
 /* .menu li:hover > a {
   color: #c6ad8f;
 } */
-
-.menu a {
-  padding: 14px;
-}
 
 /*RESPONSIVE NAVBAR MENU STARTS*/
 /* CHECKBOX HACK */
@@ -130,22 +109,14 @@ input[type=checkbox]{
     display:none;
     position: absolute;
     background-color: #ffffff;
+    top: 62px;
     right: 0;
     left: 0;
     text-align: center;
-    padding: 16px 0;
   }
   .menu a {
-    display: block;
+    display: flex;
   }
-  /* .menu li:hover {
-    display: inline-block;
-    background-color:#425664;
-    transition: 0.3s ease;
-  }
-  .menu li + li {
-    margin-top: 12px;
-  } */
   input[type=checkbox]:checked ~ .menu{
     display: block;
   }
